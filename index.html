@@ -9,68 +9,97 @@
 </head>
 <body>
 	<!-- Escribe tu código aquí -->
-	<header>
-		<nav>
-			<span>start bootstrap</span>
-			<a href="#">ortfolio</a>
-			<a href="#">about</a>
-			<a href="#">contact</a>
+	<header class="row" >
+		<nav class="text-uppercase barranav fondoAzul col-12">
+			<div class="col-8">
+				<a href="#home" class="prueba col-12" >start bootstrap</a>
+			</div>
+			<div class="col-4 textCenter">
+				<ul class="row">
+					<li class="col-4"><a href="#portfolio" >portfolio</a>
+					</li>
+					<li class="col-4" ><a href="#about">about</a>
+					</li>
+					<li class="col-4"><a href="#contact">contact</a>
+					</li>
+				</ul>
+			</div>
 		</nav>
 	</header>
-	<section id="home">
-		<img src="assets/images/profile.png" alt="">
-		<h1>start bootstrap</h1>
-		<hr>
-		<p>Web Developer - Graphic Artist - User Experience Designer</p>
+
+	<section id="home" class="row fondoVerde letrasBlancasYTipoLetra ">
+		<div class="row ">
+			<div class="col-12 textCenter marginTop">
+				<img src="assets/images/profile.png" alt="">
+			</div>
+			<div class=" textCenter">
+				<h1 class="text-uppercase">start bootstrap</h1>
+				<hr class="star">
+				<p>Web Developer - Graphic Artist - User Experience Designer</p>
+			</div>
+		</div>
 	</section>
 
-	<section id="portafolio">
-		<h2>Portfolio</h2>
+	<section id="portfolio" class="textCenter row">
+		<h2 class="text-uppercase">Portfolio</h2>
 		<hr>
-		<section class="imagenes">
-			<div class="">
-				<img src="assets/images/portfolio/cabin.png" alt="">
-			</div>
-			<div class="">
-				<img src="assets/images/portfolio/cake.png" alt="">
-			</div>
-			<div class="">
-				<img src="assets/images/portfolio/circus.png" alt="">
-			</div>
-			<div class="">
-				<img src="assets/images/portfolio/game.png" alt="">
-			</div>
-			<div class="">
-				<img src="assets/images/portfolio/safe.png" alt="">
-			</div>
-			<div class="">
-				<img src="assets/images/portfolio/submarine.png" alt="">
+		<div class="col-2"></div>
+		<div class="col-8">
+			<div class="row">
+				<div class="col-4">
+					<img src="assets/images/portfolio/cabin.png" class="cuadro" alt="">
+				</div>
+				<div class="col-4">
+					<img src="assets/images/portfolio/cake.png" class="cuadro" alt="">
+				</div>
+				<div class="col-4">
+					<img src="assets/images/portfolio/circus.png" class="cuadro" alt="">
+				</div>
 			</div>
 
+			<div class="row">
+				<div class="col-4">
+					<img src="assets/images/portfolio/game.png" class="cuadro" alt="">
+				</div>
+				<div class="col-4">
+					<img src="assets/images/portfolio/safe.png" class="cuadro" alt="">
+				</div>
+				<div class="col-4">
+					<img src="assets/images/portfolio/submarine.png" class="cuadro" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="col-2"></div>
 	</section>
 
-	<section id="about">
-		<h2>about</h2>
+
+	<section id="about" class="fondoVerde row textCenter">
+		<h2 class="text-uppercase">about</h2>
 		<hr>
-		<p>Freelancer is a free bootstrap theme
-		created by Start Bootstrap. the
-			download includes the complete source
-			files including HTML, CSS, and JavaScript
-			as well as optional LESS stylesheets for
-			easy customization.
-		</p>
-		<p>Whether you´re a student looking to
-			showcase your work, a professional
-			looking to attract clients, or a graphic
-			artist looking to share your projects, this
-			template is the perfect starting point!
-		</p>
+		<i class="fa fa-star" aria-hidden="true"></i>
+		<div class="row">
+			<div class="col-3"></div>
+			<p class="col-3">Freelancer is a free bootstrap theme
+				created by Start Bootstrap. the
+				download includes the complete source
+				files including HTML, CSS, and JavaScript
+				as well as optional LESS stylesheets for
+				easy customization.
+			</p>
+			<p class="col-3">Whether you´re a student looking to
+				showcase your work, a professional
+				looking to attract clients, or a graphic
+				artist looking to share your projects, this
+				template is the perfect starting point!
+			</p>
+			<div class="col-3"></div>
+		</div>
 		<div class="">
 			Download Theme
 		</div>
 	</section>
 
-	<section id="contact">
+	<section id="contact" class="row">
 		<h2>contact me</h2>
 		<form class="" action="index.html" method="post">
 			<input type="text" name="" placeholder="Name" value="">
@@ -81,7 +110,7 @@
 		</form>
 	</section>
 
-	<footer>
+	<footer class="fondoAzul row">
 		<section id="location">
 			<p>LOCATION</p>
 			<p>3481 Melrose Place</p>
@@ -103,7 +132,7 @@
 		</section>
 		<section>
 			<div class="">
-				Copyright C Your Website 2016 
+				Copyright C Your Website 2016
 			</div>
 		</section>
 	</footer>
